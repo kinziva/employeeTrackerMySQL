@@ -243,7 +243,6 @@ const addData = () => {
 const viewDepartment = () => {
   connection.query("SELECT * FROM department", (err, res) => {
     console.table(res);
-    // call runner
     runApp();
   });
 };
@@ -252,7 +251,6 @@ const viewDepartment = () => {
 const viewRoles = () => {
   connection.query("SELECT * FROM roles", (err, res) => {
     console.table(res);
-    // call runner
     runApp();
   });
 };
@@ -261,7 +259,6 @@ const viewRoles = () => {
 const viewEmployee = () => {
   connection.query("SELECT * FROM employee", (err, res) => {
     console.table(res);
-    // call runner
     runApp();
   });
 };
