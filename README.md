@@ -22,8 +22,6 @@ So that I can organize and plan my business
 
 Following database schema designed containing three tables:
 
-![Database Schema](Assets/schema.png)
-
 * **department**:
 
   * **id** - INT PRIMARY KEY
@@ -56,8 +54,11 @@ Following database schema designed containing three tables:
 
 ## Screenshot
 
-![Notes page screenshot](./Develop/public/assets/images/notes.JPG)
-![Notes CLI screenshot](./Develop/public/assets/images/noteCLI.JPG)
+![CLI Main screenshot](./Develop/assets/mainApp.JPG)
+![CLI Add View Department screenshot](./Develop/assets/addViewDepartment.JPG)
+![CLI Add View Roles screenshot](./Develop/assets/AddViewRoles.JPG)
+![CLI Add View Employee screenshot](./Develop/assets/AddViewEmployee.JPG)
+![CLI Update Employee Role screenshot](./Develop/assets/UpdateEmployeeRole.JPG)
 
 ## Table of Contents
 
@@ -108,6 +109,3 @@ Contact with me with any questions : [GitHub](https://github.com/kinziva)<br />
 * How to run the app
 * How to select responses for the app 
 * How to view , add and update
-
-
-
