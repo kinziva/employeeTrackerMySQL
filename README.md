@@ -54,10 +54,15 @@ Following database schema designed containing three tables:
 
 ## Screenshot
 
+* Main screenshot
 ![CLI Main screenshot](./Develop/assets/mainApp.JPG)
+* Add View Department screenshot
 ![CLI Add View Department screenshot](./Develop/assets/addViewDepartment.JPG)
+* Add View Roles screenshot
 ![CLI Add View Roles screenshot](./Develop/assets/AddViewRoles.JPG)
+* Add View Employee screenshot
 ![CLI Add View Employee screenshot](./Develop/assets/AddViewEmployee.JPG)
+* Update Employee Role screenshot
 ![CLI Update Employee Role screenshot](./Develop/assets/UpdateEmployeeRole.JPG)
 
 ## Table of Contents
