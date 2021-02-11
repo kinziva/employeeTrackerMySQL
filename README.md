@@ -104,9 +104,10 @@ Contact with me with any questions : [GitHub](https://github.com/kinziva)<br />
 * Repository [Repository URL ](https://github.com/kinziva/employeeTrackerMySQL)
 
 ## Video
- Click to Watch! Video Walktrough [![https://youtu.be/ ]](https://youtu.be/ "Employee Tracker -  usage definition!") Explained following in the Video.
-* How to install the app
+ Click to Watch! Video Walktrough [![https://youtu.be/qs77HvYrYUY]](https://youtu.be/qs77HvYrYUY/ "Employee Tracker -  usage definition!") Explained following in the Video.
 * How to run the app
-* How to enter responses for the app 
+* How to select responses for the app 
+* How to view , add and update
+
 
 
