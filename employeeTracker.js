@@ -317,7 +317,7 @@ const updateData = () => {
 // UPDATE role function
 const updateRoles = () => {
   let employeeID;
-  let newroles;
+  let updatedRole;
   connection.query("SELECT * FROM employee", (err, results) => {
     if (err) throw err;
     inquirer
@@ -337,9 +337,11 @@ const updateRoles = () => {
         },
       ])
       .then((answer) => {
-        results.forEach((item) => {
-          if (item.last_name === answer.employee.split(" ")[1]) {
-            employeeID = item.id;
+        results.forEach((employeeData) => {
+          //if  we have a match for, selected users last name
+          if (employeeData.last_name === answer.employee.split(" ")[1]) {
+           // get employee ID
+            employeeID = employeeData.id;
           }
         });
         connection.query("SELECT * FROM roles", (err, results) => {
@@ -347,8 +349,9 @@ const updateRoles = () => {
           inquirer
             .prompt([
               {
-                name: "updatedroles",
+                name: "updatedRoles",
                 type: "rawlist",
+                //Give all role options
                 choices() {
                   const choiceArray = [];
                   results.forEach(({ title }) => {
@@ -361,14 +364,16 @@ const updateRoles = () => {
             ])
             .then((answer) => {
               results.forEach((roles) => {
-                if (roles.title === answer.updatedroles) {
-                  newroles = roles.id;
+                if (roles.title === answer.updatedRoles) {
+                  //get the new role
+                  updatedRole = roles.id;
                 }
               });
               var query = "UPDATE employee SET ? WHERE ?";
               connection.query(
                 query,
-                [{ role_id: newroles }, { id: employeeID }],
+                //UPDATE employee(table) SET role_id = updatedRole WHERE employee.id =employeeID 
+                [{ role_id: updatedRole }, { id: employeeID }],
                 (error) => {
                   if (error) throw err;
                   runApp();
